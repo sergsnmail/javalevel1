@@ -37,7 +37,7 @@ public class Lesson3 {
         sc.close();
     }
 
-    private static char[] checkAnswer(char[] hiddenWordChar, String answer, char[] outputStr) {
+    private static void checkAnswer(char[] hiddenWordChar, String answer, char[] outputStr) {
         char[] answerChar = answer.toCharArray();
 
         for (int i = 0; i < hiddenWordChar.length; i++) {
@@ -49,7 +49,6 @@ public class Lesson3 {
             }
         }
         System.out.println(new String(outputStr));
-        return outputStr;
     }
 
     private static String makeWord() {
